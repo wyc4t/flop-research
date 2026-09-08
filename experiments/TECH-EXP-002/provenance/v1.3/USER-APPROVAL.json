@@ -1,0 +1,6 @@
+{
+  "plan_sha256": "dad6cd5c222a91eff9639edbea9c20ef8b3f73a4f499546220847faa4496ab8c",
+  "recorded_utc": "2026-09-08T12:54:11.893713+00:00",
+  "source": "User replied yes after exact v1.3 messages, offsets and hash were displayed.",
+  "scope": "Four v1.3 probes after local signing is ready and one activity gate returns GO."
+}

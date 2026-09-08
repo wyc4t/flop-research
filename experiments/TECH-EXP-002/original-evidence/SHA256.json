@@ -1,0 +1,14 @@
+{
+  "REPORT.md": "20815b03335d7fde330085ab498b0ed77a2423b56db3814b662f24c34e9e6c49",
+  "REVIEW-SUMMARY.md": "ccebe4add3803df1ddbb45aed8f926b8fdb43e15505ec013356cd0051113b9b6",
+  "evidence/analysis.json": "8ac874ef5c2e6ac366971bf842f4d2a28b23bbee170b6ee949996a2eef3ee22f",
+  "evidence/attribution.jsonl": "e35ab62210dd788c29522960365d0810b102a145de86d3dfc475092ea559f81d",
+  "evidence/block-records.jsonl": "d0c5a2b4ad8f2c6ec0f0780a3e6bb7b0146c1cbcb295086eb05e1f0ca27162d4",
+  "evidence/events.jsonl": "48e372b273b6f55e5980834cc1b2a9185498ffe2e88081e6318f41ec8c1b8124",
+  "evidence/http.jsonl": "afa8ae7432f7d766fae79b447f6d17373ab14ceb8f2757d093caafb94c2b4511",
+  "evidence/messages.jsonl": "d6a9b8765ee05251f3a5ebf9b8dd08df52ba27992368325a3fc573cfd5cf4e9d",
+  "evidence/plan.json": "5ce6ec140e0fcfd2702c42859aeb6a33c8e6e97f6efdcbfa936b91161758e563",
+  "evidence/posts.jsonl": "5020de8271c88c9ba7c53e503d585d46625b0e21732c618851c638b5dd43198c",
+  "evidence/summary.jsonl": "ddc7986f4443c28316eb09dd06b9406e7025a99bb04b4eb8bfecb249c587e6b5",
+  "verify_evidence.py": "dd4d9f22048cf4e7baf208ba8c6a0776eede88e6cc1d9fd80172667529f0a317"
+}

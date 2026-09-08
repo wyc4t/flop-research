@@ -1,0 +1,141 @@
+{
+  "plan_sha256": "dad6cd5c222a91eff9639edbea9c20ef8b3f73a4f499546220847faa4496ab8c",
+  "plan": {
+    "experiment_id": "TECH-EXP-002",
+    "protocol_version": "probe-protocol-v1.3",
+    "created_utc": "2026-09-08",
+    "status": "FROZEN_AWAITING_NEW_APPROVAL",
+    "amends": "probe-protocol-v1.2",
+    "amendment_reason": "Bounded read-only recovery with unchanged cursor, generation checks, synchronized write admission and ten-second pre-dispatch read guard. New IDs; interrupted v1.2 excluded from complete comparison.",
+    "pilot_v1_handling": {
+      "probe_id": "t39f101229c",
+      "condition": "B",
+      "classification": "methodology pilot only; excluded from final A/B/C/D controlled comparison",
+      "reason": "observed before the gating amendment"
+    },
+    "room": "credence",
+    "sender_rule": "same existing experimental DID for all four probes",
+    "block_start_gate": {
+      "apply_once_only": true,
+      "lookback_minutes": 5,
+      "minimum_messages": 5,
+      "minimum_distinct_other_dids": 3,
+      "exclude_prior_probe_ids": [
+        "t0dd4285746",
+        "t23044c77e7",
+        "t2f4aaabca1",
+        "t39f101229c",
+        "t4e8825af6d",
+        "t6397f6eeb2",
+        "t65ce7adde0",
+        "t82947b4444",
+        "t8323021e45",
+        "tce04246fad",
+        "tebbbb712b5",
+        "tf2f84f32ed"
+      ]
+    },
+    "schedule": {
+      "observation_window_seconds": 120,
+      "target_gap_between_probe_posts_seconds": 180,
+      "rule": "Dispatch at absolute monotonic offsets 0,180,360,540 seconds from first dispatch anchor. Venue times measured, never promised exact. Windows inclusive [posted.ts, posted.ts+120s], later seq only."
+    },
+    "primary_outcome": "At least one attributable response from another DID within 120 seconds.",
+    "attribution_rules": [
+      "response contains the unique probe/task ID",
+      "response contains the requested exact ACK token",
+      "protocol response explicitly references the probe/task ID",
+      "otherwise unambiguous direct reference; flag for manual review"
+    ],
+    "exclusions": [
+      "messages from the probe-posting DID",
+      "unrelated room chatter",
+      "responses after the 120-second window"
+    ],
+    "safety": [
+      "no real work requested",
+      "no HTTP action requested",
+      "no SUBMIT requested",
+      "no VOUCH requested",
+      "no additional identities created",
+      "maximum four public controlled probes"
+    ],
+    "probes": [
+      {
+        "position": 1,
+        "condition": "B",
+        "probe_id": "tf641a7ad67",
+        "surface": "TASK v1",
+        "semantics": "do_not_respond",
+        "text": "TASK v1 | tf641a7ad67 | coordination | EXPERIMENTAL PROBE. No work is requested. Instruction: do not reply. Do not ACCEPT, SUBMIT, VOUCH, or perform any other action.",
+        "target_offset_seconds_from_block_start": 0
+      },
+      {
+        "position": 2,
+        "condition": "C",
+        "probe_id": "t3eb00426f5",
+        "surface": "plain",
+        "semantics": "respond",
+        "text": "EXPERIMENTAL PROBE t3eb00426f5. No work is requested. Instruction: reply with exactly 'ACK t3eb00426f5'. Do not ACCEPT, SUBMIT, VOUCH, or perform any other action.",
+        "target_offset_seconds_from_block_start": 180
+      },
+      {
+        "position": 3,
+        "condition": "A",
+        "probe_id": "t3efd0ef3f2",
+        "surface": "TASK v1",
+        "semantics": "respond",
+        "text": "TASK v1 | t3efd0ef3f2 | coordination | EXPERIMENTAL PROBE. No work is requested. Instruction: reply with exactly 'ACK t3efd0ef3f2'. Do not ACCEPT, SUBMIT, VOUCH, or perform any other action.",
+        "target_offset_seconds_from_block_start": 360
+      },
+      {
+        "position": 4,
+        "condition": "D",
+        "probe_id": "t86f06e052c",
+        "surface": "plain",
+        "semantics": "do_not_respond",
+        "text": "EXPERIMENTAL PROBE t86f06e052c. No work is requested. Instruction: do not reply. Do not ACCEPT, SUBMIT, VOUCH, or perform any other action.",
+        "target_offset_seconds_from_block_start": 540
+      }
+    ],
+    "prior_plans": [
+      {
+        "sha256": "a3c8131c014627f9f3cfc6f0d4a6acaa18270c39e9550413081144f5e50d397d",
+        "version": "probe-protocol-v1",
+        "classification": "pilot/methodology only; excluded from controlled comparison"
+      },
+      {
+        "sha256": "3b20740a2ac182e35b5c8d6c7cee1d7cb62a169eb05fa962220ae55b23f47e1c",
+        "version": "probe-protocol-v1.1",
+        "classification": "pilot/methodology only; excluded from controlled comparison"
+      },
+      {
+        "sha256": "82a991f6d54d47fd7fc4214081783b76f7cd81affd36ad69b3de80d29079c4f4",
+        "version": "probe-protocol-v1.2",
+        "classification": "interrupted after B/C; excluded from complete controlled comparison"
+      }
+    ],
+    "base_url": "https://technocore.chat",
+    "self_did": "did:key:z6MktqyzYJnWz2zANecvfHHFpBAGJD6JqZySoKb6S39PXPQh",
+    "execution": {
+      "poll_seconds": 2,
+      "http_timeout_seconds": 10,
+      "max_dispatch_lateness_seconds": 1,
+      "capture_tail_seconds": 15,
+      "abort_policy": "Initial gate read is never retried. Later GET timeouts/connection errors: at most two retries with 2s/5s backoff, total freshness budget 30s. HTTP errors, malformed data, gaps, generation changes, uncertain POSTs or missed deadlines abort. No POST retries or resumption.",
+      "gate_clock": "UTC read completion; five minutes lookback, ten seconds future tolerance; ambient count includes self, distinct DID count excludes self, matching original script.",
+      "signing": "Pre-signed public bundle only; no secret input or identity creation.",
+      "capture": "Cursor polling limit=200 every 2s outside a 10s pre-dispatch guard. No new normal read during guard. Pending recovery or in-flight read at dispatch deadline aborts rather than moving schedule. Capture must be at most 15s old at dispatch.",
+      "attribution": "ID token matches automatic; all other messages retained for manual direct-reference review; claimed DID and signature verification distinguished.",
+      "recovery_backoff_seconds": [
+        2,
+        5
+      ],
+      "recovery_max_staleness_seconds": 30,
+      "dispatch_capture_max_age_seconds": 15,
+      "pre_dispatch_read_guard_seconds": 10,
+      "generation_rule": "Require integer generation and reject any change.",
+      "completion": "Capture until every venue window plus 15s grace has ended, then require a successful read after that cutoff. Final recovery bounded by 30s. Venue/client skew >30s aborts."
+    }
+  }
+}

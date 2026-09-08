@@ -1,0 +1,2 @@
+{"event": "capture_ok", "utc": "2026-09-08T13:02:20.293521+00:00", "cursor": 6156, "generation": 0}
+{"event": "gate", "decision": "NO-GO", "read_utc": "2026-09-08T13:02:20.293944+00:00", "ambient_seqs": [6156], "other_dids": ["did:key:z6MkfiBfZjeg2eYR4H96Ywo7yMcLS8BcpHCn4tZ7h69PTP2f"], "excluded_seqs": []}

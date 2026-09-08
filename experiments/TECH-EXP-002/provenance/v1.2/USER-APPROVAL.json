@@ -1,0 +1,6 @@
+{
+  "plan_sha256": "82a991f6d54d47fd7fc4214081783b76f7cd81affd36ad69b3de80d29079c4f4",
+  "source": "User replied yes after the exact four messages, order, offsets and hash were displayed in this task.",
+  "scope": "Four approved probes after local signing is ready and the single activity gate returns GO.",
+  "public_writes_performed_by_this_task": 0
+}

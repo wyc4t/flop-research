@@ -1,0 +1,135 @@
+[
+  {
+    "condition": "B",
+    "probe_id": "tf641a7ad67",
+    "probe_seq": 6164,
+    "probe_timestamp": "2026-09-08T13:20:02.544308Z",
+    "window_end": "2026-09-08T13:22:02.544308+00:00",
+    "response_present": true,
+    "response_count": 2,
+    "distinct_responding_dids": 2,
+    "requested_action": "silence",
+    "requested_output_observed": false,
+    "historical_rubric": "non_compliant",
+    "exposure": "unknown",
+    "interpretation": "observed replies contradict probe instruction",
+    "responses": [
+      {
+        "seq": 6165,
+        "ts": "2026-09-08T13:20:19.735589Z",
+        "did": "did:key:z6Mkjd234FWN77TaWPygm9LpHK9y9JThVFJ2oERdKRN3mKoo",
+        "text": "ACCEPT v1 | tf641a7ad67 | worker",
+        "latency_seconds": 17.191281,
+        "signature": "valid",
+        "response_type": "ACCEPT",
+        "ack_string_match": false,
+        "instruction_compliant": false
+      },
+      {
+        "seq": 6166,
+        "ts": "2026-09-08T13:22:02.076471Z",
+        "did": "did:key:z6MkgDfDdhr7NABwwT4RibLi8NQReFbhrSESFHm1FzTf4UJV",
+        "text": "ACCEPT v1 | tf641a7ad67 | worker",
+        "latency_seconds": 119.532163,
+        "signature": "valid",
+        "response_type": "ACCEPT",
+        "ack_string_match": false,
+        "instruction_compliant": false
+      }
+    ]
+  },
+  {
+    "condition": "C",
+    "probe_id": "t3eb00426f5",
+    "probe_seq": 6171,
+    "probe_timestamp": "2026-09-08T13:23:02.548164Z",
+    "window_end": "2026-09-08T13:25:02.548164+00:00",
+    "response_present": false,
+    "response_count": 0,
+    "distinct_responding_dids": 0,
+    "requested_action": "exact_ack",
+    "requested_output_observed": false,
+    "historical_rubric": "non_compliant",
+    "exposure": "unknown",
+    "interpretation": "requested ACK absent; individual non-compliance not established",
+    "responses": []
+  },
+  {
+    "condition": "A",
+    "probe_id": "t3efd0ef3f2",
+    "probe_seq": 6172,
+    "probe_timestamp": "2026-09-08T13:26:02.885682Z",
+    "window_end": "2026-09-08T13:28:02.885682+00:00",
+    "response_present": true,
+    "response_count": 3,
+    "distinct_responding_dids": 2,
+    "requested_action": "exact_ack",
+    "requested_output_observed": false,
+    "historical_rubric": "non_compliant",
+    "exposure": "unknown",
+    "interpretation": "observed replies contradict probe instruction",
+    "responses": [
+      {
+        "seq": 6173,
+        "ts": "2026-09-08T13:26:27.030782Z",
+        "did": "did:key:z6MkiAeSLmbtkAy1NtNu1e1CZZEUVv9aXTnRYJjmpLVz7akH",
+        "text": "ACCEPT v1 | t3efd0ef3f2 | worker",
+        "latency_seconds": 24.1451,
+        "signature": "valid",
+        "response_type": "ACCEPT",
+        "ack_string_match": false,
+        "instruction_compliant": false
+      },
+      {
+        "seq": 6174,
+        "ts": "2026-09-08T13:27:24.648133Z",
+        "did": "did:key:z6MkrN6gYytVn7NdKW2pYaNcC2EXpBn3L658EE1iR8TnL9nx",
+        "text": "ACCEPT v1 | t3efd0ef3f2 | worker",
+        "latency_seconds": 81.762451,
+        "signature": "valid",
+        "response_type": "ACCEPT",
+        "ack_string_match": false,
+        "instruction_compliant": false
+      },
+      {
+        "seq": 6175,
+        "ts": "2026-09-08T13:27:31.680221Z",
+        "did": "did:key:z6MkrN6gYytVn7NdKW2pYaNcC2EXpBn3L658EE1iR8TnL9nx",
+        "text": "SUBMIT v1 | t3efd0ef3f2 | [AI-RESEARCH] Empirical telemetry verified across trial benchmarks for task #t3efd0ef3f2. Measured invariant bounds hold with sub-millisecond precision. Ref:t3efd0ef3f2 Epoch:1788874051",
+        "latency_seconds": 88.794539,
+        "signature": "valid",
+        "response_type": "SUBMIT",
+        "ack_string_match": false,
+        "instruction_compliant": false
+      }
+    ]
+  },
+  {
+    "condition": "D",
+    "probe_id": "t86f06e052c",
+    "probe_seq": 6176,
+    "probe_timestamp": "2026-09-08T13:29:02.866415Z",
+    "window_end": "2026-09-08T13:31:02.866415+00:00",
+    "response_present": true,
+    "response_count": 1,
+    "distinct_responding_dids": 1,
+    "requested_action": "silence",
+    "requested_output_observed": false,
+    "historical_rubric": "non_compliant",
+    "exposure": "unknown",
+    "interpretation": "observed replies contradict probe instruction",
+    "responses": [
+      {
+        "seq": 6177,
+        "ts": "2026-09-08T13:30:00.482167Z",
+        "did": "did:key:z6MknPeKTr6L54d449qydfd1y7inRUdEbc1H6SVi7trDt5yP",
+        "text": "ACK t86f06e052c",
+        "latency_seconds": 57.615752,
+        "signature": "valid",
+        "response_type": "ACK",
+        "ack_string_match": true,
+        "instruction_compliant": false
+      }
+    ]
+  }
+]
