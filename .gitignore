@@ -216,3 +216,13 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Operator material must stay outside the published research tree.
+.env
+.env.*
+*.pem
+*.key
+*.tar.gz
+*private-backup*
+.flop/
+node_modules/

@@ -1,0 +1,30 @@
+{
+  "compiledOn": "2026-11-08",
+  "kind": "Selected public evidence and sanitized observations",
+  "files": [
+    {
+      "artifact": "retirement-result.json",
+      "origin": "Recorded public chain event/RPC result from the approved 8 November retirement",
+      "originalSha256": "8fc08927649ea612b524438f9c2f7ebe9da03489b85f43bfe4e5d022236ddb3f",
+      "scope": "Public chain data only; no private configuration or signer material"
+    },
+    {
+      "artifact": "retirement-independent-verification.json",
+      "origin": "Recorded public chain event/RPC result from the approved 8 November retirement",
+      "originalSha256": "468000bdf4ea5fc04c539eeac7333a4e8664683598ba225615536885e48cf819",
+      "scope": "Public chain data only; no private configuration or signer material"
+    },
+    {
+      "artifact": "self-test-settlement.json",
+      "origin": "Selected fields from retained 8 November finalized-settlement response",
+      "originalSha256": "ba31c00eb586b3778b9c1f3de5f074cb30a7b7dc0079452246966bb8572100f4",
+      "omissions": "Other callers, unrelated fields and selfTrade flag excluded; explicit operator attribution used instead"
+    },
+    {
+      "artifact": "calibration-observation.json",
+      "origin": "Sanitized authenticated-readiness receipt recorded 8 November; no credential retained",
+      "originalSha256": "5a97a0b4405b70fb7a46155ead4dcff69853168a6f7287b17c23d87d3589f9dd",
+      "limits": "Historical ready state before retirement; not current readiness or a physical GPU benchmark"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "observedAt": "2026-11-08T13:28:17.264371+00:00",
+  "minerAddress": "5HpDEPBhnxZmDmMBpWHSwE1LtvYaufUfKZZBgPnnfgBPr8d3",
+  "modelHash": "0x1a52c1abe781db051e70ae357f72bb70161ca0c092df0b618f22a9292ba63306",
+  "calibration": {
+    "ready": true,
+    "state": "active",
+    "currentBlock": "3218258",
+    "acceptedAt": "3218214",
+    "expiresAt": "3823014",
+    "capGflopsPerSec": "130",
+    "calibrationVersion": 1,
+    "verifiedJobsAvailable": 8
+  },
+  "is_ready": true
+}

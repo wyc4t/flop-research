@@ -1,0 +1,28 @@
+{
+  "at": "2026-11-08T15:52:54.309Z",
+  "block": "3226868",
+  "blockHash": "0x3127c016e1dec717582b6f7aa318f9d52fa5ec9c71336a0992f6a4f1707fb2a9",
+  "txHash": "0x23545984aac880a24a809c82b0bb036102237cb820d1442edf33501f268070a0",
+  "extrinsicIndex": 2,
+  "call": "minerStaking.deregisterMiner",
+  "registeredAtRetirementBlock": false,
+  "events": [
+    "balances.Withdraw",
+    "minerStaking.SponsorUnbondingStarted",
+    "minerStaking.MinerDeregistered",
+    "balances.Deposit",
+    "balances.Deposit",
+    "transactionPayment.TransactionFeePaid",
+    "system.ExtrinsicSuccess"
+  ],
+  "actualFeeRaw": "45640750540000000",
+  "sponsorEvent": [
+    232,
+    "5HHJFMRmKK4sLMwFR2UddJ8DrX75K3vSGqHwXF4PTYohCZjA",
+    "5HpDEPBhnxZmDmMBpWHSwE1LtvYaufUfKZZBgPnnfgBPr8d3",
+    "0x000000000000d3c21bcecceda1000000",
+    3831668,
+    232,
+    0
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "startedAt": "2026-11-08T15:52:03.710Z",
+  "miner": "5HpDEPBhnxZmDmMBpWHSwE1LtvYaufUfKZZBgPnnfgBPr8d3",
+  "call": "minerStaking.deregisterMiner",
+  "feeCeilingRaw": "2000000000000000000",
+  "status": "finalized",
+  "feeEstimateRaw": "1589874690540000000",
+  "txHash": "0x23545984aac880a24a809c82b0bb036102237cb820d1442edf33501f268070a0",
+  "lastStatus": "Finalized",
+  "finalizedBlockHash": "0x3127c016e1dec717582b6f7aa318f9d52fa5ec9c71336a0992f6a4f1707fb2a9",
+  "dispatchError": null,
+  "events": [
+    {
+      "section": "balances",
+      "method": "Withdraw",
+      "data": [
+        "5HpDEPBhnxZmDmMBpWHSwE1LtvYaufUfKZZBgPnnfgBPr8d3",
+        "0x000000000000000016105e9b87055300"
+      ],
+      "phase": {
+        "applyExtrinsic": 2
+      }
+    },
+    {
+      "section": "minerStaking",
+      "method": "SponsorUnbondingStarted",
+      "data": [
+        232,
+        "5HHJFMRmKK4sLMwFR2UddJ8DrX75K3vSGqHwXF4PTYohCZjA",
+        "5HpDEPBhnxZmDmMBpWHSwE1LtvYaufUfKZZBgPnnfgBPr8d3",
+        "0x000000000000d3c21bcecceda1000000",
+        3831668,
+        232,
+        0
+      ],
+      "phase": {
+        "applyExtrinsic": 2
+      }
+    },
+    {
+      "section": "minerStaking",
+      "method": "MinerDeregistered",
+      "data": [
+        "5HpDEPBhnxZmDmMBpWHSwE1LtvYaufUfKZZBgPnnfgBPr8d3"
+      ],
+      "phase": {
+        "applyExtrinsic": 2
+      }
+    },
+    {
+      "section": "balances",
+      "method": "Deposit",
+      "data": [
+        "5HpDEPBhnxZmDmMBpWHSwE1LtvYaufUfKZZBgPnnfgBPr8d3",
+        "0x0000000000000000156e389633cd4800"
+      ],
+      "phase": {
+        "applyExtrinsic": 2
+      }
+    },
+    {
+      "section": "balances",
+      "method": "Deposit",
+      "data": [
+        "5DLxDJ8NANAHahD2LRjtfjAuqbVVAexSVjbMA1J2drPo3W2J",
+        "0x000000000000000000a2260553380b00"
+      ],
+      "phase": {
+        "applyExtrinsic": 2
+      }
+    },
+    {
+      "section": "transactionPayment",
+      "method": "TransactionFeePaid",
+      "data": [
+        "5HpDEPBhnxZmDmMBpWHSwE1LtvYaufUfKZZBgPnnfgBPr8d3",
+        "0x000000000000000000a2260553380b00",
+        0
+      ],
+      "phase": {
+        "applyExtrinsic": 2
+      }
+    },
+    {
+      "section": "system",
+      "method": "ExtrinsicSuccess",
+      "data": [
+        {
+          "weight": {
+            "refTime": 9128150000,
+            "proofSize": 191289
+          },
+          "class": "Normal",
+          "paysFee": "Yes"
+        }
+      ],
+      "phase": {
+        "applyExtrinsic": 2
+      }
+    }
+  ],
+  "finishedAt": "2026-11-08T15:52:22.225Z"
+}
