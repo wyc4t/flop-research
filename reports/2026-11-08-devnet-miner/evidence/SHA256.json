@@ -1,0 +1,11 @@
+{
+  "algorithm": "SHA-256",
+  "files": {
+    "SOURCES.json": "27c3f412bf605d75ba4376615ff8b277deb60fd9f026deb11b64184f105230dd",
+    "calibration-observation.json": "5a97a0b4405b70fb7a46155ead4dcff69853168a6f7287b17c23d87d3589f9dd",
+    "retirement-independent-verification.json": "468000bdf4ea5fc04c539eeac7333a4e8664683598ba225615536885e48cf819",
+    "retirement-result.json": "8fc08927649ea612b524438f9c2f7ebe9da03489b85f43bfe4e5d022236ddb3f",
+    "self-test-settlement.json": "86e27c5aef577cec9d1aa2d83589cb5ba2781699328c060a862592374bc8edc6"
+  },
+  "limits": "Hashes establish local exact-byte identity, not trusted time, completeness or execution correctness."
+}

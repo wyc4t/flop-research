@@ -1,0 +1,29 @@
+{
+  "observedAt": "2026-11-08T13:51:39.193Z",
+  "source": "FLOP Devnet indexed finalized settlements, cross-checked against direct RPC for the approved test",
+  "classification": "Controlled self-test; caller and miner under the same operator",
+  "limits": "Selected indexed fields, independently reconciled by direct RPC during the original experiment. No answer or full execution receipt retained. No new replay performed while consolidating.",
+  "data": {
+    "channelId": "0xfdeef812e8002a39b424afb743140563fe3516de9a70fd06766648e737f09512",
+    "settledBlock": 3219349,
+    "settledAt": 1794145582001,
+    "agent": "5HgqmLjWQsEB8XE4UMFL8KcH9EeUaLkYHEZYSrE9SjBUULU2",
+    "miner": "5HpDEPBhnxZmDmMBpWHSwE1LtvYaufUfKZZBgPnnfgBPr8d3",
+    "escrow": "10000000000000000",
+    "minerPaid": "9900000000000000",
+    "burned": "0",
+    "aggregateGn": "25",
+    "cooperative": true,
+    "settlementKind": "settled",
+    "settlementEvent": "computeChannel.Settled",
+    "modelHash": "0x1a52c1abe781db051e70ae357f72bb70161ca0c092df0b618f22a9292ba63306",
+    "assuranceTier": "Soft",
+    "calibrationVersion": 1,
+    "settledBlockHash": "0xe798639716547d8bd9b57fe6c97af282197cf825a7ee37e45bac524099ab8321",
+    "extrinsicHash": "0xee029adc938b0627ba4ee09603f245d611d03084e2df00823630dc8c7377ba6e",
+    "extrinsicIndex": 2,
+    "eventIndex": 3,
+    "callSection": "computeChannel",
+    "callMethod": "settle"
+  }
+}
